@@ -1,0 +1,459 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f2ece1">
+  <meta name="description" content="尘壤学院 CHENRANG ACADEMY —— 西方奇幻世界中的魔法学院：学院概况、四大学派分院、学院建筑、名人堂、学生档案与论坛。">
+  <title>尘壤学院 · CHENRANG ACADEMY</title>
+
+  <link rel="icon" href="assets/img/crest.webp" type="image/webp">
+  <link rel="preload" href="assets/img/hero-academy.webp" as="image">
+  <link rel="preload" href="assets/fonts/cormorant-garamond-normal-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/home.css">
+
+  <script>
+    document.documentElement.classList.add('js');
+    if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      document.documentElement.classList.add('is-intro');
+    }
+    window.addEventListener('load', function () {
+      window.setTimeout(function () {
+        if (window.__crReady) return;
+        document.documentElement.classList.remove('is-intro');
+        var intro = document.getElementById('intro');
+        if (intro) intro.hidden = true;
+        Array.prototype.forEach.call(document.querySelectorAll('.reveal'), function (el) {
+          el.classList.add('is-in');
+        });
+      }, 2500);
+    });
+  </script>
+</head>
+<body>
+
+<div class="page-frame" aria-hidden="true"></div>
+
+<!-- 入场：星空与魔法阵 -->
+<div class="intro" id="intro">
+  <div class="intro-sky" id="intro-sky" aria-hidden="true">
+    <div class="intro-nebula" aria-hidden="true"></div>
+    <div class="intro-milky" aria-hidden="true"></div>
+    <div class="star-field" id="star-field" aria-hidden="true"></div>
+    <span class="shooting" aria-hidden="true"></span>
+    <span class="shooting shooting--far" aria-hidden="true"></span>
+  </div>
+
+  <div class="intro-portal" id="intro-portal" aria-hidden="true">
+    <div class="portal-inner">
+      <img src="assets/img/hero-academy.webp" alt="" aria-hidden="true">
+    </div>
+    <div class="portal-wash" aria-hidden="true"></div>
+  </div>
+
+  <div class="intro-glow" id="intro-glow" aria-hidden="true"></div>
+
+  <div class="magic-circle" id="magic-circle" aria-hidden="true">
+    <svg class="mc-svg" id="mc-svg" viewBox="-500 -500 1000 1000" aria-hidden="true" focusable="false">
+      <g id="mc-outer"></g>
+      <g id="mc-ticks"></g>
+      <g id="mc-mid"></g>
+      <g id="mc-inner"></g>
+    </svg>
+    <img class="mc-img mc-img--sun" id="mc-sun" src="assets/img/circle-sun.webp" alt="" aria-hidden="true">
+  </div>
+
+  <button class="intro-skip" id="skip-intro" type="button">跳过入场 · SKIP</button>
+</div>
+
+<!-- 页首 -->
+<header class="site-header" id="site-header">
+  <a class="brand" href="#home" aria-label="尘壤学院 首页">
+    <img class="brand-crest" src="assets/img/crest.webp" alt="" aria-hidden="true">
+    <span class="brand-text">
+      <strong>尘壤学院</strong>
+      <small>CHENRANG ACADEMY</small>
+    </span>
+  </a>
+
+  <nav class="main-nav" aria-label="学院主导航">
+    <a href="#home" class="nav-link" data-nav="home"><i>I</i><span>首页</span></a>
+    <a href="#academy" class="nav-link" data-nav="academy"><i>II</i><span>学院</span></a>
+    <a href="#disciplines" class="nav-link" data-nav="disciplines"><i>III</i><span>分院</span></a>
+    <a href="#architecture" class="nav-link" data-nav="architecture"><i>IV</i><span>建筑</span></a>
+    <a href="#hall" class="nav-link" data-nav="hall"><i>V</i><span>名人堂</span></a>
+    <a href="#archive" class="nav-link" data-nav="archive"><i>VI</i><span>档案</span></a>
+    <a href="#forum" class="nav-link" data-nav="forum"><i>VII</i><span>论坛</span></a>
+  </nav>
+</header>
+
+<main>
+
+  <!-- 01 首页 -->
+  <section class="hero" id="home">
+    <div class="hero-media" id="hero-media">
+      <img src="assets/img/hero-academy.webp" alt="学院城：夕阳下的穹顶大殿、尖塔与层叠的屋脊" loading="eager" decoding="async">
+    </div>
+    <div class="hero-wash" aria-hidden="true"></div>
+    <span class="hero-frame" aria-hidden="true"></span>
+
+    <div class="hero-plate">
+      <p class="hero-rubric" data-hero-line>Liber Chenrang</p>
+      <h1 class="hero-title">
+        <span class="hero-title-cn" data-hero-line>尘壤学院</span>
+        <span class="hero-title-en" data-hero-line>CHENRANG ACADEMY</span>
+      </h1>
+      <p class="hero-lede" data-hero-line>西方奇幻世界中的一所魔法学院，设有自然派、神秘学派、德鲁伊派与非自然派四大学派。</p>
+    </div>
+
+    <a class="scroll-cue" href="#academy">
+      <span>向下</span>
+      <i aria-hidden="true"></i>
+    </a>
+  </section>
+
+  <!-- 02 学院 -->
+  <section class="academy" id="academy">
+
+    <div class="wrap">
+      <header class="sec-head reveal">
+        <span class="sec-num">II</span>
+        <h2>学院</h2>
+        <span class="sec-en">Academy</span>
+      </header>
+
+      <div class="academy-grid">
+        <div class="academy-main">
+          <p class="academy-lead reveal"><span class="initial" aria-hidden="true">尘</span>壤学院是西方奇幻世界中的一所魔法学院。</p>
+          <p class="academy-body reveal">学院设有自然派、神秘学派、德鲁伊派与非自然派四大学派。</p>
+
+          <dl class="fact-list reveal">
+            <div class="fact">
+              <dt>名称</dt><span class="leader" aria-hidden="true"></span><dd>尘壤学院</dd>
+            </div>
+            <div class="fact">
+              <dt>英文</dt><span class="leader" aria-hidden="true"></span><dd>CHENRANG ACADEMY</dd>
+            </div>
+            <div class="fact">
+              <dt>校训</dt><span class="leader" aria-hidden="true"></span><dd>Scientia et Communio</dd>
+            </div>
+            <div class="fact">
+              <dt>学派</dt><span class="leader" aria-hidden="true"></span><dd>四大学派</dd>
+            </div>
+          </dl>
+        </div>
+
+        <figure class="crest-figure reveal">
+          <div class="crest-ring">
+            <span class="crest-frame fil" aria-hidden="true"></span>
+            <img class="crest-halo" src="assets/img/ornament-sun-arc.webp" alt="" aria-hidden="true">
+            <img class="crest-img" src="assets/img/crest.webp" alt="尘壤学院院徽：双翼、双剑与盾徽，下缘书有校训">
+          </div>
+          <figcaption>院徽 · Scientia et Communio</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- 03 分院 -->
+  <section class="disciplines theme-dark" id="disciplines">
+
+    <div class="wrap">
+      <header class="sec-head sec-head--center reveal">
+        <span class="sec-num">III</span>
+        <h2>分院</h2>
+        <span class="sec-en">Disciplines</span>
+      </header>
+
+      <p class="sec-intro reveal">四大学派各成一院，以窗为记。</p>
+
+      <div class="house-row" role="tablist" aria-label="四大学派">
+        <button class="house" type="button" role="tab" id="tab-nature" aria-controls="house-panel" aria-selected="false" data-house="nature">
+          <svg class="glass" viewBox="0 0 180 300" aria-hidden="true" focusable="false">
+            <defs>
+              <clipPath id="win-nature"><path d="M14 286V124Q14 66 90 26Q166 66 166 124V286Z"/></clipPath>
+            </defs>
+            <g clip-path="url(#win-nature)">
+              <rect width="180" height="300" fill="#e7ecd4"/>
+              <path d="M14 186h152v100H14z" fill="#64733f"/>
+              <path d="M14 186h76v100H14z" fill="#7d8f52"/>
+              <path d="M14 126q0-58 76-98q76 40 76 98z" fill="#c6d3a4"/>
+              <circle cx="90" cy="150" r="42" fill="#f8f3e4"/>
+              <circle cx="90" cy="150" r="42" fill="none" stroke="#2b2622" stroke-width="3"/>
+              <g stroke="#4c5a33" stroke-width="2.6" fill="none" stroke-linecap="round">
+                <path d="M90 180V128"/>
+                <path d="M90 152c0-12 9-21 21-21"/>
+                <path d="M90 162c0-10-8-18-19-18"/>
+              </g>
+              <g fill="#5d6d3d">
+                <ellipse cx="111" cy="131" rx="9" ry="5.4" transform="rotate(-26 111 131)"/>
+                <ellipse cx="71" cy="144" rx="8" ry="5" transform="rotate(22 71 144)"/>
+              </g>
+              <path d="M24 158l6 9-6 9-6-9z" fill="#93a761"/>
+              <path d="M156 158l6 9-6 9-6-9z" fill="#93a761"/>
+            </g>
+            <path d="M14 286V124Q14 66 90 26Q166 66 166 124V286" fill="none" stroke="#d9d0be" stroke-width="8"/>
+            <path d="M25 286V126Q25 73 90 37Q155 73 155 126V286" fill="none" stroke="#b9af9b" stroke-width="2" opacity=".7"/>
+            <path d="M90 286V37" stroke="#2b2622" stroke-width="3" opacity=".85"/>
+            <path d="M14 186h152" stroke="#2b2622" stroke-width="4"/>
+          </svg>
+          <span class="house-cn">自然派</span>
+          <span class="house-en">Nature</span>
+        </button>
+
+        <button class="house" type="button" role="tab" id="tab-mysticism" aria-controls="house-panel" aria-selected="false" data-house="mysticism">
+          <svg class="glass" viewBox="0 0 180 300" aria-hidden="true" focusable="false">
+            <defs>
+              <clipPath id="win-mysticism"><path d="M14 286V124Q14 66 90 26Q166 66 166 124V286Z"/></clipPath>
+            </defs>
+            <g clip-path="url(#win-mysticism)">
+              <rect width="180" height="300" fill="#e3dcee"/>
+              <path d="M14 186h152v100H14z" fill="#3f3559"/>
+              <path d="M14 186h76v100H14z" fill="#574a7a"/>
+              <path d="M14 126q0-58 76-98q76 40 76 98z" fill="#bcb0d2"/>
+              <circle cx="90" cy="150" r="42" fill="#f7f3fb"/>
+              <circle cx="90" cy="150" r="42" fill="none" stroke="#2b2622" stroke-width="3"/>
+              <g fill="none" stroke="#4a3f68" stroke-width="2.4">
+                <circle cx="90" cy="150" r="24"/>
+                <ellipse cx="90" cy="150" rx="24" ry="10"/>
+                <ellipse cx="90" cy="150" rx="10" ry="24"/>
+              </g>
+              <g fill="#7c6aa8">
+                <circle cx="110" cy="132" r="3.6"/>
+                <circle cx="72" cy="168" r="2.8"/>
+              </g>
+              <path d="M24 158l6 9-6 9-6-9z" fill="#8b79b8"/>
+              <path d="M156 158l6 9-6 9-6-9z" fill="#8b79b8"/>
+            </g>
+            <path d="M14 286V124Q14 66 90 26Q166 66 166 124V286" fill="none" stroke="#d9d0be" stroke-width="8"/>
+            <path d="M25 286V126Q25 73 90 37Q155 73 155 126V286" fill="none" stroke="#b9af9b" stroke-width="2" opacity=".7"/>
+            <path d="M90 286V37" stroke="#2b2622" stroke-width="3" opacity=".85"/>
+            <path d="M14 186h152" stroke="#2b2622" stroke-width="4"/>
+          </svg>
+          <span class="house-cn">神秘学派</span>
+          <span class="house-en">Mysticism</span>
+        </button>
+
+        <button class="house" type="button" role="tab" id="tab-druid" aria-controls="house-panel" aria-selected="false" data-house="druid">
+          <svg class="glass" viewBox="0 0 180 300" aria-hidden="true" focusable="false">
+            <defs>
+              <clipPath id="win-druid"><path d="M14 286V124Q14 66 90 26Q166 66 166 124V286Z"/></clipPath>
+            </defs>
+            <g clip-path="url(#win-druid)">
+              <rect width="180" height="300" fill="#eadfc8"/>
+              <path d="M14 186h152v100H14z" fill="#5b4229"/>
+              <path d="M14 186h76v100H14z" fill="#8a6a44"/>
+              <path d="M14 126q0-58 76-98q76 40 76 98z" fill="#c5a983"/>
+              <circle cx="90" cy="150" r="42" fill="#f8f1de"/>
+              <circle cx="90" cy="150" r="42" fill="none" stroke="#2b2622" stroke-width="3"/>
+              <g stroke="#5b4229" stroke-width="3" fill="none" stroke-linecap="round">
+                <path d="M90 172V138"/>
+                <path d="M90 138c-7-9-7-18-2-25"/>
+                <path d="M90 138c7-9 7-18 2-25"/>
+                <path d="M76 150c-5-6-5-13-2-18"/>
+                <path d="M104 150c5-6 5-13 2-18"/>
+              </g>
+              <g fill="#6b4f34">
+                <path d="M89 111l-5-9 5 3 5-3z"/>
+                <ellipse cx="73" cy="132" rx="4.4" ry="7" transform="rotate(-24 73 132)"/>
+                <ellipse cx="107" cy="132" rx="4.4" ry="7" transform="rotate(24 107 132)"/>
+              </g>
+              <path d="M24 158l6 9-6 9-6-9z" fill="#a9855a"/>
+              <path d="M156 158l6 9-6 9-6-9z" fill="#a9855a"/>
+            </g>
+            <path d="M14 286V124Q14 66 90 26Q166 66 166 124V286" fill="none" stroke="#d9d0be" stroke-width="8"/>
+            <path d="M25 286V126Q25 73 90 37Q155 73 155 126V286" fill="none" stroke="#b9af9b" stroke-width="2" opacity=".7"/>
+            <path d="M90 286V37" stroke="#2b2622" stroke-width="3" opacity=".85"/>
+            <path d="M14 186h152" stroke="#2b2622" stroke-width="4"/>
+          </svg>
+          <span class="house-cn">德鲁伊派</span>
+          <span class="house-en">Druid</span>
+        </button>
+
+        <button class="house" type="button" role="tab" id="tab-unnatural" aria-controls="house-panel" aria-selected="false" data-house="unnatural">
+          <svg class="glass" viewBox="0 0 180 300" aria-hidden="true" focusable="false">
+            <defs>
+              <clipPath id="win-unnatural"><path d="M14 286V124Q14 66 90 26Q166 66 166 124V286Z"/></clipPath>
+            </defs>
+            <g clip-path="url(#win-unnatural)">
+              <rect width="180" height="300" fill="#dde4e8"/>
+              <path d="M14 186h152v100H14z" fill="#354451"/>
+              <path d="M14 186h76v100H14z" fill="#4b5c6a"/>
+              <path d="M14 126q0-58 76-98q76 40 76 98z" fill="#b0bdc5"/>
+              <circle cx="90" cy="150" r="42" fill="#f2f5f6"/>
+              <circle cx="90" cy="150" r="42" fill="none" stroke="#2b2622" stroke-width="3"/>
+              <g fill="none" stroke="#3f4f5c" stroke-width="2.6">
+                <circle cx="90" cy="150" r="22"/>
+                <circle cx="90" cy="150" r="9"/>
+                <circle cx="90" cy="150" r="32" stroke-dasharray="3 6"/>
+              </g>
+              <g fill="#3f4f5c">
+                <rect x="86" y="124" width="8" height="7"/>
+                <rect x="86" y="169" width="8" height="7"/>
+                <rect x="63" y="146" width="8" height="7"/>
+                <rect x="109" y="146" width="8" height="7"/>
+              </g>
+              <path d="M24 158l6 9-6 9-6-9z" fill="#7d909d"/>
+              <path d="M156 158l6 9-6 9-6-9z" fill="#7d909d"/>
+            </g>
+            <path d="M14 286V124Q14 66 90 26Q166 66 166 124V286" fill="none" stroke="#d9d0be" stroke-width="8"/>
+            <path d="M25 286V126Q25 73 90 37Q155 73 155 126V286" fill="none" stroke="#b9af9b" stroke-width="2" opacity=".7"/>
+            <path d="M90 286V37" stroke="#2b2622" stroke-width="3" opacity=".85"/>
+            <path d="M14 186h152" stroke="#2b2622" stroke-width="4"/>
+          </svg>
+          <span class="house-cn">非自然派</span>
+          <span class="house-en">Unnatural</span>
+        </button>
+      </div>
+
+      <div class="house-detail reveal" id="house-panel" role="tabpanel" aria-live="polite">
+        <p class="house-detail-num" id="detail-num">I</p>
+        <div class="house-detail-body">
+          <h3 id="detail-cn">自然派</h3>
+          <p class="house-detail-en" id="detail-en">Nature</p>
+          <p class="house-detail-text" id="detail-text" hidden></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 04 建筑 -->
+  <section class="architecture" id="architecture">
+
+    <div class="wrap">
+      <header class="sec-head reveal">
+        <span class="sec-num">IV</span>
+        <h2>建筑</h2>
+        <span class="sec-en">Architecture</span>
+      </header>
+
+      <p class="sec-intro reveal">学院城与山谷，是学院最常被看见的两处景象。</p>
+
+      <div class="arch-row">
+        <figure class="arch reveal">
+          <div class="miniature"><div class="arch-frame">
+            <img class="arch-photo" src="assets/img/hero-academy.webp" alt="学院城的穹顶大殿与尖塔" decoding="async">
+            <img class="arch-window" src="assets/img/frame-gothic.webp" alt="" aria-hidden="true">
+          </div>
+          <figcaption><span>01</span>学院城</figcaption>
+        </figure>
+
+        <figure class="arch reveal">
+          <div class="miniature"><div class="arch-frame">
+            <img class="arch-photo" src="assets/img/valley.webp" alt="学院外的山谷、岩柱与远处的雪山" decoding="async">
+            <img class="arch-window" src="assets/img/frame-gothic.webp" alt="" aria-hidden="true">
+          </div>
+          <figcaption><span>I</span>山谷</figcaption>
+        </figure>
+
+        <div class="arch-note reveal">
+          <p>城堡、尖塔、山谷与图书馆构成了学院的主要场景。</p>
+          <ul class="arch-list">
+            <li>学院城</li>
+            <li>山谷</li>
+            <li>图书馆</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 05 名人堂 -->
+  <section class="hall theme-dark" id="hall">
+    <div class="wrap">
+      <header class="sec-head sec-head--center reveal">
+        <span class="sec-num">V</span>
+        <h2>名人堂</h2>
+        <span class="sec-en">Hall of Fame</span>
+      </header>
+
+      <p class="sec-intro reveal">学院为历代受铭记者留下的位置。</p>
+
+      <div class="hall-wall">
+        <div class="hall-plate reveal"><span class="plate-filigree fil" aria-hidden="true"></span><span class="hall-num">I</span></div>
+        <div class="hall-plate reveal"><span class="plate-filigree fil" aria-hidden="true"></span><span class="hall-num">II</span></div>
+        <div class="hall-plate reveal"><span class="plate-filigree fil" aria-hidden="true"></span><span class="hall-num">III</span></div>
+        <div class="hall-plate reveal"><span class="plate-filigree fil" aria-hidden="true"></span><span class="hall-num">IV</span></div>
+        <div class="hall-plate reveal"><span class="plate-filigree fil" aria-hidden="true"></span><span class="hall-num">V</span></div>
+        <div class="hall-plate reveal"><span class="plate-filigree fil" aria-hidden="true"></span><span class="hall-num">VI</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 06 学生档案 -->
+  <section class="archive" id="archive">
+
+    <div class="wrap">
+      <header class="sec-head reveal">
+        <span class="sec-num">VI</span>
+        <h2>学生档案</h2>
+        <span class="sec-en">Students</span>
+      </header>
+
+      <p class="sec-intro reveal">按编号编册的学生名录。</p>
+
+      <div class="ledger reveal">
+        <div class="ledger-row ledger-row--head">
+          <span>编号</span><span>姓名</span><span>学派</span><span>入学</span>
+        </div>
+        <div class="ledger-row"><span></span><span></span><span></span><span></span></div>
+        <div class="ledger-row"><span></span><span></span><span></span><span></span></div>
+        <div class="ledger-row"><span></span><span></span><span></span><span></span></div>
+        <div class="ledger-row"><span></span><span></span><span></span><span></span></div>
+        <div class="ledger-row"><span></span><span></span><span></span><span></span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 07 论坛 -->
+  <section class="forum" id="forum">
+    <div class="wrap">
+      <header class="sec-head reveal">
+        <span class="sec-num">VII</span>
+        <h2>论坛</h2>
+        <span class="sec-en">Forum</span>
+      </header>
+
+      <div class="board-list">
+        <a class="board reveal" href="#forum">
+          <span class="board-num" aria-hidden="true">I</span>
+          <span class="board-cn">公告</span>
+          <span class="board-en">Notices</span>
+          <i aria-hidden="true"></i>
+        </a>
+        <a class="board reveal" href="#forum">
+          <span class="board-num" aria-hidden="true">II</span>
+          <span class="board-cn">讨论</span>
+          <span class="board-en">Discussion</span>
+          <i aria-hidden="true"></i>
+        </a>
+        <a class="board reveal" href="#forum">
+          <span class="board-num" aria-hidden="true">III</span>
+          <span class="board-cn">求助</span>
+          <span class="board-en">Assistance</span>
+          <i aria-hidden="true"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer theme-dark">
+  <span class="footer-rule fil" aria-hidden="true"></span>
+  <div class="footer-crest-wrap">
+    <span class="footer-frame fil" aria-hidden="true"></span>
+    <img class="footer-crest" src="assets/img/crest.webp" alt="" aria-hidden="true">
+  </div>
+  <p class="footer-name">尘壤学院</p>
+  <p class="footer-latin">CHENRANG ACADEMY</p>
+  <p class="footer-motto">Scientia et Communio</p>`r`n  <p class="footer-explicit">Explicit liber Chenrang</p>
+  <p class="footer-meta"><a href="ASSET_SOURCES.md">素材来源与署名</a></p>
+</footer>
+
+<script src="js/intro.js" defer></script>
+<script src="js/main.js" defer></script>
+</body>
+</html>
