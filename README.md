@@ -2,6 +2,9 @@
 
 西方奇幻背景下的魔法学院官网首页。单页长滚动，纯静态，无需构建。
 
+- 线上地址：https://linqiuyan22.github.io/chenrang-academy/
+- 仓库地址：https://github.com/linqiuyan22/chenrang-academy
+
 ## 打开方式
 
 双击 `index.html` 即可浏览；也可以在项目根目录起一个本地服务：
