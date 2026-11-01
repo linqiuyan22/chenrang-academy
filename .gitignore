@@ -5,3 +5,7 @@
 Thumbs.db
 desktop.ini
 .DS_Store
+
+# 本地截图与临时产物
+_*.png
+_tmp_*
